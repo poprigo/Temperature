@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Black Ops One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather Sans' rel='stylesheet'>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <h2>Temp</br>Converter</h2>
+            <span>Effortlessly Convert Between Fahrenheit, Celsius, and Kelvin</span>
+            <form class="mt-4">
+                <div class="form-group">
+                    <label for="inputTemp">Enter Temperature:</label>
+                    <input type="number" class="form-control" id="inputTemp" placeholder="Enter temperature..." step="0.01">
+                </div>
+                <p class="error-message" id="tempError"></p>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="fromUnit">From:</label>
+                        <select class="form-control" id="fromUnit">
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                            <option value="rankine">Rankine (°R)</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="toUnit">To:</label>
+                        <select class="form-control" id="toUnit">
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                            <option value="rankine">Rankine (°R)</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-block" onclick="convertTemperature()">Convert</button>
+            </form>
+            <div id="result"></div>
+            <div id="formula" style="margin-top: 20px;"></div>
+            <footer class="branding">
+                <img src="logo.png" alt="Logo" class="logo">
+                <p class="brand-text">Powered by Poprigo!</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

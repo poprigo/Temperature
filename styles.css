@@ -1,0 +1,107 @@
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    background: linear-gradient(45deg, #EFB61B, #871C65);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    max-width: 500px;
+}
+
+h2 {
+    font-family: "Black Ops One";
+    color: #871C65;
+    font-weight: 500;
+}
+
+span {
+    color: rgb(83, 83, 83);
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #EFB61B;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #871C65;
+    border-color: #871C65;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    height: 100%;
+}
+
+.logo {
+    max-width: 26px;
+    margin-bottom: 12px;
+}
+
+.brand-text {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+#result {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: none;
+}
+
+#formula {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: none;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+}
